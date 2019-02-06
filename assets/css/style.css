@@ -1,0 +1,104 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+
+
+/* Base Styling */
+* {
+	box-sizing: border-box;
+	transition: 0.3s;
+	font-family: "Roboto Slab", serif;
+}
+html, body, header, main, footer {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	background-color: #21d4fd;
+  background: linear-gradient(to bottom right, #21d4fd 0%, #b721ff 100%);
+  font-family: "Roboto Slab", cursive;
+	height: 100%;
+	width: 100%;
+}
+header, main, footer {
+  background: #ddd;
+  background-image: linear-gradient(to bottom right, #dff 0%, #aaf 100%);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.9);
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.flex-line * {
+	display: inline-block;
+}
+.enabled {
+	opacity: 1;
+}
+.disabled {
+	opacity: 0.5;
+}
+/* Header Content Styling */
+header {
+	display: flex;
+	position: fixed;
+	width: 90%;
+	top: 0;
+	left: 0;
+	height: 50px;
+	border-top-left-radius: none;
+	border-top-right-radius: none;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+header > .inner > span.title {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 900;
+}
+
+/* Main Content Styling */
+main > article {
+	border-radius: 5px;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+}
+header > .inner > span.title {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 900;
+}
+.inner input, .inner select, .inner button {
+	padding: 5px 2.5px;
+	margin: 5px 1px;
+	margin-left: 2.5%;
+	border-radius: 5px;
+	border: 1px solid #1e90ff;
+	background-color: #1e90ff;
+	color: #b2cfff;
+}
+.inner select {
+	width: 93%;
+}
+.inner input {
+	width: 75%;
+	padding-left: 5px;
+}
+.inner button {
+	width: 15%;
+}
+.inner button.btn-emojiSelect, .inner button.btn-addEmoji {
+	width: 6.125%;
+}
+/* Footer Content Styling */
+footer {
+	border-radius: 5px;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+@media only screen and (min-width: 934px) {
+	.inner {
+		width: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
