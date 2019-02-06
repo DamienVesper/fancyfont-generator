@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta name = "title" content = "Fancy Font Generator">
+		<meta name = "description" content = "A website to generate several supported unicode fonts.">
+    <meta name = "viewport" content="width = device-width">
+    
+		<title>Fancy Font Generator</title>
+    <link href = "style.css" rel="stylesheet" type="text/css" />
+		<link href = "./VesperEnterprise.PNG" rel = "icon" type = "image/png" sizes = "32x32">
+    <script src = "script.js"></script>
+  </head>
+  <body>
+		<header>
+			<div class = "inner">
+				<span class = "title">𝙵𝚊𝚗𝚌𝚢 𝙵𝚘𝚗𝚝 𝙶𝚎𝚗𝚎𝚛𝚊𝚝𝚘𝚛</span>
+			</div>
+		</header>
+		<br/><br/><br/>
+		<main>
+			<article>
+				<div class = "inner">
+					<span class = "flex-line">
+						<select class = "form-stylingType disabled" disabled>
+							<optgroup label = "Normal Formats">
+								<option value = "normal">Normal</option>
+								<option value = "bold" disabled>Bold</option>
+					<!--	<option value = "italics">Italics</option>	!-->
+								<option value = "bold-italics" disabled>Bold Italics</option>
+								<option value = "small-caps" disabled>Small Caps</option>
+								<option value = "monospace" disabled>Monospace</option>
+							</optgroup>
+							<optgroup label = "Unicode Formats">
+								<option value = "handwriting-1">Handwriting 1</option>
+								<option value = "handwriting-2" selected>Handwriting 2</option>
+								<option value = "fraktur" disabled>Fraktur</option>
+								<option value = "bold-fraktur" disabled>Bold Fraktur</option>
+								<option value = "bold-script" disabled>Bold Script</option>
+								<option value = "double-struck" disabled>Double Struck</option>
+								<option value = "sorcerer">Sorcerer</option>
+								<option value = "currency" disabled>Currency</option>
+								<option value = "special" disabled>Special</option>
+								<option value = "antrophobia" disabled>Antrophobia</option>
+								<option value = "paranormal" disabled>Paranormal</option>
+							</optgroup>
+							<optgroup label = "Symbol Formats">
+								<option value = "bubbles" disabled>Bubbles</option>
+								<option value = "dark-bubbles" disabled>Dark Bubbles</option>
+								<option value = "boxed" disabled>Boxed</option>
+							</optgroup>
+						</select>
+					</span>
+					<span class = "flex-line">
+						<input class = "form-originalText enabled" placeholder = "Your regular text here..." required />
+						<button class = "btn btn-loadText enabled" onclick = "loadText()">Generate</button>
+						<!--
+						<button class = "btn btn-emojiSelect disabled" onclick = "emojiSelect()" disabled>+</button>
+						<button class = "btn btn-addEmoji disabled" onclick = "addEmoji()" disabled>+</button> !-->
+					</span>
+					<span class = "flex-line">
+						<input class = "form-otherText enabled" placeholder = "Your new text appears here..." />
+						<button class = "btn btn-copyText enabled" onclick = "copyText()">Copy</button>
+					</span>
+				</div>
+			</article>
+			<!--
+			<br/>
+			<article>
+				<div class = "inner">
+						<span class = "info-title">Welcome to <strong>Fancy Font Generator</strong>.</span>
+				</div>
+			</article>
+		!-->
+		</main>
+		<br/>
+		<footer>
+			<div class = "inner">
+				<span>Website © DamienVesper 2019</span>
+				<button class = "btn disabled" onclick = "contactOwner()" disabled>Contact</button>
+				<button class = "btn enabled" onclick = "loadWebsite()" disabled>Website</button>
+			</div>
+			</footer>
+  </body>
+</html>
